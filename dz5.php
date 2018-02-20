@@ -23,12 +23,20 @@ echo count($decoded)*/
     			<th>Телефон.	</th>
     		</tr>
     		<?php
-    		for ($i=0; $i < count($decoded); $i++) {
+    		/*for ($i=0; $i < count($decoded); $i++) {
     			$name = $decoded[$i] ['firstName'];
     			$family = $decoded[$i] ['lastName'];
     			$adress = $decoded[$i] ['address'];
     			$number = $decoded[$i] ['phoneNumber'];
-    			?>
+    			?>*/
+    			foreach ($decoded as $persone ) {
+    				//echo '<pre>';
+    				//print_r($persone);
+    				$name = $persone ['firstName'];
+    				$family = $persone ['lastName'];
+    				$adress = $persone ['address'];
+    				$number = $persone ['phoneNumber'];
+    				?>
     			<tr>
     			<td><?=$name ?>	</td>
     			<td><?=$family ?>	</td>
