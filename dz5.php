@@ -30,18 +30,19 @@ echo count($decoded)*/
     			$number = $decoded[$i] ['phoneNumber'];
     			?>*/
     			foreach ($decoded as $persone ) {
-    				//echo '<pre>';
-    				//print_r($persone);
+    				/*echo '<pre>';
+    				/print_r($persone);
     				$name = $persone ['firstName'];
     				$family = $persone ['lastName'];
     				$adress = $persone ['address'];
     				$number = $persone ['phoneNumber'];
+    				?>*/
     				?>
     			<tr>
-    			<td><?=$name ?>	</td>
-    			<td><?=$family ?>	</td>
-    			<td><?=$adress ?>	</td>
-    			<td><?=$number ?>	</td>	
+    			<td><?=$persone ['firstName'] ?>	</td>
+    			<td><?=$persone ['lastName'] ?>	</td>
+    			<td><?=$persone ['address'] ?>	</td>
+    			<td><?=$persone ['phoneNumber'] ?>	</td>	
     			</tr>
     		<?php }; ?>
     	</table>
